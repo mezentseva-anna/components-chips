@@ -1,7 +1,8 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
-  stories: ['../src/**/*.stories.tsx'],
+  stories: ['../src/components/**/*.stories.tsx'],
+  addons: [ '@storybook/addon-controls'],
   webpackFinal: async (config, { configType }) => {
     // add scss support
     config.module.rules.push({
@@ -12,4 +13,4 @@ module.exports = {
 
     return config;
   },
-};
+}

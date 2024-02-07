@@ -1,0 +1,104 @@
+//variables
+$success: #40be51;
+$warning: #efe14a;
+$error: #bc3642;
+$system: #44bfd5;
+$backgroundLight: #f0f8ffff;
+$backgroundDark: #c5e1fb;
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.chip {
+  width: max-content;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: $backgroundLight;
+  border: 2px solid $backgroundLight;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-family: sans-serif;
+
+  &Active {
+    &Primary {
+      background-color: $backgroundDark;
+      border: 2px solid $backgroundDark;
+    }
+
+    &Secondary {
+      border: 2px solid $backgroundDark;
+    }
+  }
+
+  &Interactive {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &Size {
+    &XS {
+      height: 24px;
+      font-size: 12px;
+      line-height: 14px;
+      padding: 0 8px;
+    }
+
+    &S {
+      height: 32px;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 0 12px;
+    }
+
+    &M {
+      height: 40px;
+      font-size: 16px;
+      line-height: 18px;
+      padding: 0 16px;
+    }
+
+    &L {
+      height: 48px;
+      font-size: 18px;
+      line-height: 120px;
+      padding: 0 20px;
+    }
+  }
+
+  &Status {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
+    &Success {
+      background-color: $success;
+    }
+
+    &Warning {
+      background-color: $warning;
+    }
+
+    &Error {
+      background-color: $error;
+    }
+
+    &System {
+      background-color: $system;
+    }
+  }
+
+  &Icon {
+    &Active {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
