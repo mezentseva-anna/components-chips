@@ -5,7 +5,7 @@ import {
   EChipsPropsSize,
   EChipsStatus,
   TChipsItemProps,
-} from '../../types/Chips.type';
+} from '../../types';
 import Chips from './Chips';
 
 const CrossIcon = (props: HTMLAttributes<Element>) => {

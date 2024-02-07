@@ -5,7 +5,7 @@ import {
   EChipsPropsSize,
   EChipsStatus,
   TChipsProps,
-} from '../../types/Chips.type';
+} from '../../types';
 import './Chips.scss';
 
 const Chips = ({
